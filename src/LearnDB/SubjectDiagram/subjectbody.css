@@ -2,9 +2,10 @@
     width: 325px;
     margin: 0 10px;
     cursor: pointer;
+    transition: all .4s ease-in-out;
 }
 .showcase :hover{
-    border-radius: 25%;
+    transform: scale(1.04);
 }
 .showcase .explore-card-base {
     margin-top: 15px !important;
@@ -23,6 +24,7 @@
     background: -o-linear-gradient(#167af4, #00c1de);
     background: linear-gradient(#167af4, #00c1de);
     padding: 25px;
+    transform: none;
 }
 .showcase .explore-card-base  .bot-base {
     height: 84px;
@@ -30,16 +32,19 @@
     padding: 10px;
     text-align: center;
     z-index: 1;
+    transform: none;
 }
 .showcase .explore-card-base .bot-base .big-number {
     font-size: 26px;
     font-weight: 500;
     color: #222222;
+    transform: none;
 }
 .showcase .explore-card-base .bot-base .text-label {
     margin-top: -5px;
     font-size: 12px;
     color: grey;
+    transform: none;
 }
 .showcase .explore-card-base .top-inner-layer .title {
     text-shadow: 0 0 20px rgba(0,0,0,0.6);
@@ -48,4 +53,8 @@
     font-size: 24px;
     font-weight: 600;
     color: white;
+    transform: none;
+}
+.showcase .explore-card-base .bot-base .row, .showcase .explore-card-base .bot-base .row .col-sm-6{
+    transform: none;
 }

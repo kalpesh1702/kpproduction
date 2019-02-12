@@ -1,0 +1,58 @@
+body{
+	overflow-x: hidden;
+}
+.headingclass{
+	height:55px;
+	padding-top: 8px;
+	border-bottom: 2px solid #08f;
+	text-align: center;
+	margin-top: 0px;
+	background: #F1F1F1;
+}
+.commonbutton{
+	margin-right:12px;
+	border-radius: 10px;
+}
+.linktable{
+	margin:15px;
+	margin-top: 25px;
+}
+.linktable > table > thead > tr{
+	background: #F1F1F1
+}
+.BackButton{
+	font-size:19px;
+	font-weight: 600;
+	color: #08f;
+	cursor: pointer;
+	padding-left: 25px !important;
+}
+.subjectText{
+	font-size:19px;
+	font-weight: 600;
+	color: darkgreen;
+}
+.custompanel{
+	margin:15px;
+}
+
+.custompanel .custompanel-heading{
+	padding:10px;
+	border: 1px solid #dee2e6;
+	min-height:50px;
+	white-space: pre-line;
+}
+
+.custompanel-body{
+	padding:15px;
+	border:1px solid #dee2e6;
+	min-height:80px;
+	white-space: pre-line;
+}
+.nav-tabs{
+	margin: 30px 15px 30px 15px;
+}
+.alert-danger{
+	margin: 30px 15px 30px 15px;
+	text-align: center;
+}

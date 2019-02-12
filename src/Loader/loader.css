@@ -1,0 +1,10 @@
+#loading {
+    background: url('./loader.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    background-size: 150px 150px;
+    z-index: 9999999;
+}
