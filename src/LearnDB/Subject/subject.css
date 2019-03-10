@@ -46,7 +46,7 @@ body{
 .custompanel-body{
 	padding:15px;
 	border:1px solid #dee2e6;
-	min-height:80px;
+	min-height:57px;
 	white-space: pre-line;
 }
 .nav-tabs{
@@ -55,4 +55,17 @@ body{
 .alert-danger{
 	margin: 30px 15px 30px 15px;
 	text-align: center;
+}
+.updateRow{
+	float: right;
+    position: relative;
+    bottom: 5px;
+    font-size: 20px;
+    color: #08f;
+    cursor: pointer;
+    display: none;
+    height: 20px;
+}
+.linktablerow:hover .updateRow {
+  display: block;
 }

@@ -1,7 +1,6 @@
 .showcase{
     width: 325px;
     margin: 0 10px;
-    cursor: pointer;
     transition: all .4s ease-in-out;
 }
 .showcase :hover{
@@ -23,7 +22,6 @@
     background: -webkit-linear-gradient(#167af4, #00c1de);
     background: -o-linear-gradient(#167af4, #00c1de);
     background: linear-gradient(#167af4, #00c1de);
-    padding: 25px;
     transform: none;
 }
 .showcase .explore-card-base  .bot-base {
@@ -33,6 +31,7 @@
     text-align: center;
     z-index: 1;
     transform: none;
+    cursor: pointer;
 }
 .showcase .explore-card-base .bot-base .big-number {
     font-size: 26px;
@@ -54,7 +53,31 @@
     font-weight: 600;
     color: white;
     transform: none;
+    padding: 25px;
 }
 .showcase .explore-card-base .bot-base .row, .showcase .explore-card-base .bot-base .row .col-sm-6{
     transform: none;
+}
+
+.showcase .explore-card-base .top-inner-layer .right-inner-layer{
+    background-color: white;
+    height: 35px;
+    width: 70px;
+    float:right;
+    border: 1px solid;
+    border-radius: 7px;
+}
+
+.printicon{
+    margin-left: 10px;
+    font-size:22px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.downloadicon{
+    margin-left: 6px;
+    font-size: 22px;
+    margin-top: 4px;
+    cursor: pointer;
 }

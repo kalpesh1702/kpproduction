@@ -76,8 +76,7 @@ class headersubjectpage extends Component{
 			  	showConfirmButton: false,
 			  	timer: 1500
 			});
-
-			this.props.refresh();
+			this.props.refresh(form);
 
 		 })
 		.catch((error) => {

@@ -24,17 +24,19 @@ class subjectcontroller extends Component{
 
 	}
 
-	refreshpage = () => {
+	refreshpage = (tabkey) => {
 
 		this.setState({
 			loader : true
 		})
 
-		this.fetchdata();
+		this.fetchdata(tabkey);
 
 	}
 
-	fetchdata = () => {
+	fetchdata = (tabkey) => {
+
+		tabkey = tabkey === "undefined" ? tabkey = "link" : tabkey;
 
 		Axios.get('/subjects/fetchdata',{
 			params:{
@@ -42,11 +44,11 @@ class subjectcontroller extends Component{
 			}
 		})
 		.then((response) => {
-
 			this.setState({
 				'loader' : false,
 				'linkData': response.data.linkdata,
-				'notesData': response.data.notesdata
+				'notesData': response.data.notesdata,
+				'tabkey': tabkey
 			})
 		 })
 		.catch((error) => {
@@ -76,7 +78,7 @@ class subjectcontroller extends Component{
 			return <NotesSubject key={index} index={index} notesdata={element} />
 		});
 
-		if(this.state.notesData.length == 0){
+		if(this.state.notesData.length === 0){
 
 			notespanel =  <Alert variant="danger">No Notes Found</Alert>;
 
@@ -98,7 +100,7 @@ class subjectcontroller extends Component{
 
 		 		<Tabs
 			        id="controlled-tab"
-			        activeKey={this.state.key}
+			        activeKey={this.state.tabkey}
 			        onSelect={(key) => this.changetabkey(key) }>
 
 			        <Tab eventKey="link" title="Link">
